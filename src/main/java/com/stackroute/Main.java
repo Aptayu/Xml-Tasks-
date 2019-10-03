@@ -18,7 +18,7 @@ public class Main
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
-//        Movie movie=(Movie)context.getBean("movie");
+        Movie movie=(Movie)context.getBean("movie1");
 //        System.out.println("Application context");
 //        System.out.println(movie.toString());
 //
@@ -30,9 +30,9 @@ public class Main
 
         //    Movie beanFMovie =(Movie) beanFactory.getBean("movie1");
 //    Movie beanDMovie = (Movie) beanFactory.getBean("movie1");
-        Movie movie1 = (Movie) context.getBean("movie1");
-        Movie movie2 = (Movie) context.getBean("movie2");
-        System.out.println(movie1==movie2);
+//        Movie movie1 = (Movie) context.getBean("movie1");
+//        Movie movie2 = (Movie) context.getBean("movie2");
+        System.out.println(movie.toString());
 
     }
 }
